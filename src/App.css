@@ -1,0 +1,57 @@
+body {
+	height: 100%;
+}
+.App {
+  text-align: center;
+}
+
+.App-header {
+  height: 15vh;
+  box-sizing: border-box;
+  background-color: #222;
+  padding: 20px;
+  color: white;
+  width: 100%;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+button {
+	font-size: 40px;
+}
+
+@keyframes ClockFade {
+  from { 
+	  background-color: #ee8888;
+	  font-color: #ccc;
+  }
+  to { background-color: #ff0000; 
+	  font-color: #fff;
+  }
+}
+
+.clock {
+	animation-name: ClockFade;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+}
+
+
+.winner {
+	background: green;
+	color: white;
+}
+
+.status,.winner, button{
+	height: 40vh;
+	line-height: 40vh;
+	width: 100%;
+        font-size: 30px;	
+	border: 1px solid black;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
